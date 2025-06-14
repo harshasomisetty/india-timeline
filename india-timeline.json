@@ -1,0 +1,674 @@
+{
+  "categories": {
+    "architecture": {
+      "temples": [
+        {
+          "name": "Tirupati Venkateshwara Temple",
+          "event": "First Recorded Endowment",
+          "year": 966,
+          "details": "CE"
+        },
+        {
+          "name": "Khajuraho Group of Monuments",
+          "period": "950 - 1050",
+          "details": "Built by Chandelas",
+          "year": 950
+        },
+        {
+          "name": "Tanjavur Bhrihadeeswara Temple",
+          "period": "1000",
+          "details": "Built by Cholas",
+          "year": 1000
+        },
+        {
+          "name": "Somnath Temple",
+          "event": "Destroyed",
+          "year": 1025,
+          "details": "CE"
+        },
+        {
+          "name": "Belur Chennakesava Temple",
+          "period": "1117",
+          "details": "Built by Hoysala Kings",
+          "year": 1117
+        },
+        {
+          "name": "Puri Jaganath Temple",
+          "period": "1161",
+          "details": "Built by Eastern Ganga King",
+          "year": 1161
+        },
+        {
+          "name": "Madhurai Meenakshi Temple",
+          "period": "1119 - 1216",
+          "details": "Built by Pandyas",
+          "year": 1119
+        },
+        {
+          "name": "Golden Temple",
+          "period": "1581 - 1604",
+          "details": "Built",
+          "year": 1581
+        },
+        {
+          "name": "Kaasi Viswanath Temple",
+          "period": "1780",
+          "details": "Rebuilt by Ahilyabai Holkar (Indore)",
+          "year": 1780
+        }
+      ]
+    },
+    "philosophy": {
+      "thinkers": [
+        {
+          "name": "Abhinavagupta",
+          "period": "950 - 1016",
+          "school": "Kashmiri Shaivism",
+          "works": ["Tantraaloka", "Abhinavabharati"],
+          "location": "Kashmir",
+          "year": 950
+        },
+        {
+          "name": "Ramanujacharya",
+          "period": "1017 - 1137",
+          "school": "Sri Vaishnava/Visishta Advaita",
+          "location": "Tamil Nadu",
+          "year": 1017
+        },
+        {
+          "name": "Hemachandra",
+          "period": "1088 - 1173",
+          "school": "Jainism",
+          "location": "Gujarat",
+          "year": 1088
+        },
+        {
+          "name": "Madhavacharya",
+          "period": "1238 - 1317",
+          "school": "Dvaita",
+          "location": "Karnataka",
+          "year": 1238
+        },
+        {
+          "name": "Vidyaranya Swamy",
+          "period": "1296 - 1386",
+          "school": "Advaita",
+          "details": "Sringeri Sankaracharya from 1380-1386, Founding Guru of Vijayanagara Kingdom",
+          "location": "Telangana",
+          "year": 1296
+        },
+        {
+          "name": "Vallabhacharya",
+          "period": "1479 - 1531",
+          "school": "Shuddha Advaita",
+          "details": "Krishna bhakta",
+          "location": "Varanasi, Uttar Pradesh",
+          "year": 1479
+        },
+        {
+          "name": "Chaitanya Mahaprabhu",
+          "period": "1486 - 1533",
+          "school": "Vaishnava - Achintya Bedha Abedha",
+          "location": "Bengal/Kalinga",
+          "year": 1486
+        },
+        {
+          "name": "Dayanand Saraswati",
+          "period": "1824 - 1883",
+          "school": "Arya Samaj",
+          "location": "Gujarat",
+          "year": 1824
+        },
+        {
+          "name": "Ramakrishna Paramahamsa",
+          "period": "1836 - 1886",
+          "details": "Devotee of Kali",
+          "location": "Bengal",
+          "year": 1836
+        },
+        {
+          "name": "Swami Vivekananda",
+          "period": "1863 - 1902",
+          "school": "Advaita",
+          "details": "Disciple of Ramakrishna Paramahamsa",
+          "location": "Bengal",
+          "year": 1863
+        },
+        {
+          "name": "Swami Chinmayananda",
+          "period": "1916 - 1993",
+          "school": "Advaita",
+          "details": "Founder of Chinmayananda Foundation",
+          "location": "Kerala",
+          "year": 1916
+        }
+      ]
+    },
+    "bhaktas": [
+      {
+        "name": "Akka Mahadevi",
+        "period": "1130 - 1160",
+        "tradition": "Lingayat",
+        "location": "Srisailam, AP",
+        "year": 1130
+      },
+      {
+        "name": "Namdev",
+        "period": "1270 - 1350",
+        "deity": "Vittobha/Panduranga",
+        "location": "Maharashtra",
+        "year": 1270
+      },
+      {
+        "name": "Kabir Das",
+        "period": "1440 - 1518",
+        "year": 1440
+      },
+      {
+        "name": "Bhakta Pothana",
+        "period": "1450 - 1510",
+        "works": ["Pothana Bhagavatham"],
+        "year": 1450
+      },
+      {
+        "name": "Guru Nanak",
+        "period": "1469 - 1539",
+        "details": "First Sikh Guru",
+        "location": "Punjab",
+        "year": 1469
+      },
+      {
+        "name": "Surdas",
+        "period": "1478 - 1584",
+        "details": "Believed to have been inspired by Vallabhacharya's philosophy",
+        "year": 1478
+      },
+      {
+        "name": "Meerabai",
+        "period": "1555 - 1603",
+        "year": 1555
+      },
+      {
+        "name": "Bhakta Tukaram",
+        "period": "1598 - 1650",
+        "deity": "Vittala/Panduranga",
+        "location": "Maharashtra",
+        "year": 1598
+      },
+      {
+        "name": "Bhakta Ramadasu",
+        "period": "1620 - 1680",
+        "year": 1620
+      },
+      {
+        "name": "Guru Gobind Singh",
+        "period": "1666 - 1708",
+        "location": "Punjab",
+        "year": 1666
+      }
+    ],
+    "music_dance": {
+      "carnatic": [
+        {
+          "name": "Purandara Dasa",
+          "period": "1484 - 1565",
+          "title": "Pitamaha of Carnatic Music",
+          "year": 1484
+        },
+        {
+          "name": "Kshetrayya",
+          "period": "1600 - 1680",
+          "year": 1600
+        },
+        {
+          "name": "Shyama Sastri",
+          "period": "1762 - 1827",
+          "year": 1762
+        },
+        {
+          "name": "Tyagaraja",
+          "period": "1767 - 1847",
+          "year": 1767
+        },
+        {
+          "name": "Muttuswamy Dikshitar",
+          "period": "1776 - 1835",
+          "year": 1776
+        },
+        {
+          "name": "Mangalampalli Balamurali Krishna",
+          "period": "1930 - 2016",
+          "year": 1930
+        }
+      ],
+      "hindustani": {
+        "split": {
+          "year": 1200,
+          "details": "Indian Classical Music split into Carnatic and Hindustani"
+        }
+      },
+      "dance": [
+        {
+          "name": "Siddhendra Yogi",
+          "period": "1700",
+          "details": "Credited for formalizing Kuchipudi, disciple of Narayana Theertha",
+          "year": 1700
+        }
+      ],
+      "theorists": [
+        {
+          "name": "Sarangadeva",
+          "period": "1175 - 1247",
+          "works": ["Sangita Ratnakara"],
+          "details": "Written with Patronage of Yadava Dynasty",
+          "year": 1175
+        },
+        {
+          "name": "Narayana Theertha",
+          "period": "1650 - 1745",
+          "works": ["Krishna Leela Tarangini"],
+          "details": "Used frequently in Kuchipudi",
+          "year": 1650
+        }
+      ]
+    },
+    "literature": {
+      "mahabharata": [
+        {
+          "name": "Nannayya",
+          "period": "1022-1063",
+          "works": ["Andhra Mahabharata Parvas: 1, 2 and half of 3"],
+          "year": 1022
+        },
+        {
+          "name": "Thikkana",
+          "period": "1205-1268",
+          "works": ["Andhra Mahabharata Parvas: 4-18"],
+          "year": 1205
+        },
+        {
+          "name": "Yerrapraggada",
+          "period": "1325 - 1353",
+          "works": ["Andhra Mahabharata 2nd half of Parva 3"],
+          "year": 1325
+        }
+      ],
+      "ramayana": [
+        {
+          "name": "Kambhar",
+          "period": "1180-1250",
+          "works": ["Kambharamayana"],
+          "language": "Tamil",
+          "year": 1180
+        },
+        {
+          "name": "Molla",
+          "period": "1440 - 1530",
+          "works": ["Molla Ramayana"],
+          "year": 1440
+        },
+        {
+          "name": "Ranganatha Ramayana",
+          "period": "1300 - 1310",
+          "language": "Telugu",
+          "year": 1300
+        },
+        {
+          "name": "Viswanatha Satyanarayana",
+          "period": "1895 - 1976",
+          "works": ["Sri Ramayana Kalpavriksham"],
+          "language": "Telugu",
+          "year": 1895
+        }
+      ],
+      "other": [
+        {
+          "name": "Jayadeva",
+          "period": "1170 - 1245",
+          "works": ["Ashtapadis"],
+          "year": 1170
+        },
+        {
+          "name": "Yogi Vemana",
+          "period": "1352 - ?",
+          "works": ["Telugu Vemana Satakam Padyaas"],
+          "year": 1352
+        },
+        {
+          "name": "Srinatha",
+          "period": "1365 - 1441",
+          "year": 1365
+        },
+        {
+          "name": "Annamayya",
+          "period": "1408 - 1503",
+          "year": 1408
+        },
+        {
+          "name": "Venkatamahakavi",
+          "period": "1630",
+          "year": 1630
+        },
+        {
+          "name": "Sadasiva Bramhendra",
+          "period": "17th Century - 1756",
+          "year": 1700
+        },
+        {
+          "name": "Sarat Chandra Chatopadhyay",
+          "period": "1876 - 1938",
+          "works": ["Devdas", "Parineeta"],
+          "year": 1876
+        },
+        {
+          "name": "Rabindranath Tagore",
+          "period": "1861 - 1941",
+          "year": 1861
+        }
+      ]
+    },
+    "political_entities": {
+      "northern_india": {
+        "gandhara_kashmir": [
+          {
+            "name": "Hindu Shahi",
+            "period": "850 - 1026",
+            "year": 850
+          }
+        ],
+        "delhi": [
+          {
+            "name": "Ghurid Dynasty",
+            "period": "879 - 1215",
+            "details": "Morphed into Delhi Sultanate after death of Mohammad Ghori",
+            "year": 879
+          },
+          {
+            "name": "Delhi Sultanate",
+            "period": "1192 - 1526",
+            "year": 1192
+          },
+          {
+            "name": "Mughal Empire",
+            "period": "1526 - 1707",
+            "details": "Baabar -> Aurangazeb",
+            "year": 1526
+          },
+          {
+            "name": "Lesser Mughals",
+            "period": "1707 - 1771",
+            "year": 1707
+          }
+        ],
+        "gujarat": [
+          {
+            "name": "Chaulukya Dynasty",
+            "period": "940 - 1244",
+            "details": "Usurped by their own generals",
+            "year": 940
+          },
+          {
+            "name": "Vaghela Dynasty",
+            "period": "1244 - 1304",
+            "details": "Usurped Chaulukyas, Lost to Delhi Sultanate",
+            "year": 1244
+          },
+          {
+            "name": "Gujarat Sultanate",
+            "period": "1407 - 1578",
+            "details": "Declared Independence from Delhi Sultanate, Annexed by Akbar",
+            "year": 1407
+          }
+        ],
+        "rajasthan": [
+          {
+            "name": "Chauhans of Sakhambari",
+            "period": "500s - 1194",
+            "details": "Ruled over present day Rajasthan, with Delhi as capital, lost to Mohammad Ghori",
+            "year": 500
+          },
+          {
+            "name": "Mewar Dynasty",
+            "period": "800s - 1303",
+            "details": "Based in present day Udaipur, Lost to Allauddin Khilji",
+            "year": 800
+          },
+          {
+            "name": "Mewar",
+            "period": "1326 - 1818",
+            "details": "Taken back from Delhi Sultanate, kept territory through Mughal treaties",
+            "year": 1326
+          }
+        ]
+      },
+      "middle_india": {
+        "maharashtra": [
+          {
+            "name": "Rashtrakutas",
+            "period": "700 - 982",
+            "details": "Lost to Western Chalukyas",
+            "year": 700
+          },
+          {
+            "name": "Western Chalukyas",
+            "period": "973 - 1198",
+            "details": "Lost to Hoysalas, Kakatiyas and Yadavas",
+            "year": 973
+          },
+          {
+            "name": "Yadava Dynasty",
+            "period": "860 - 1317",
+            "details": "Lost to Delhi Sultanate",
+            "year": 860
+          },
+          {
+            "name": "Berar Sultanate",
+            "period": "1490 - 1572",
+            "details": "Lost to Ahmednagar Sultanate",
+            "year": 1490
+          },
+          {
+            "name": "Ahmednagar Sultanate",
+            "period": "1490 - 1636",
+            "details": "Lost to Aurangazeb",
+            "year": 1490
+          },
+          {
+            "name": "Bidar Sultanate",
+            "period": "1490 - 1619",
+            "details": "Lost to Bijapur Sultanate",
+            "year": 1490
+          },
+          {
+            "name": "Bijapur Sultanate",
+            "period": "1490 - 1686",
+            "details": "Lost to Aurangazeb",
+            "year": 1490
+          },
+          {
+            "name": "Maratha Empire",
+            "period": "1627 - 1818",
+            "year": 1627
+          }
+        ]
+      },
+      "southern_india": {
+        "karnataka": [
+          {
+            "name": "Hoysalas",
+            "period": "1026 - 1343",
+            "details": "Ruled Modern Day Karnataka, Merged into Vijayanagara Empire",
+            "year": 1026
+          },
+          {
+            "name": "Kingdom of Mysore",
+            "period": "1399 - 1565",
+            "details": "Vassals Under Vijayanagara Kingdom",
+            "year": 1399
+          },
+          {
+            "name": "Mysore Maharajas",
+            "period": "1565 - 1758",
+            "details": "Started as Vassals under Vijayanagara Empire, Switched Dynasties under Hyder Ali",
+            "year": 1565
+          },
+          {
+            "name": "Mysore Sultanate",
+            "period": "1758 - 1799",
+            "year": 1758
+          }
+        ],
+        "andhra": [
+          {
+            "name": "Telugu Cholas",
+            "period": "500 - 1207",
+            "details": "Ruled Southern Andhra Pradesh + Northern Tamil Nadu, lost to Kakatiyas",
+            "year": 500
+          },
+          {
+            "name": "Kakatiyas",
+            "period": "1163 - 1323",
+            "details": "Lost to Delhi Sultanate under Muhammad bin Tuglaq -> Bahamani Sultanate",
+            "year": 1163
+          }
+        ],
+        "tamil_nadu": [
+          {
+            "name": "Later Cholas",
+            "period": "1070 - 1279",
+            "details": "Continuation of Earlier Chola Dynasties, Lost to Pandyas",
+            "year": 1070
+          },
+          {
+            "name": "Pandyas",
+            "period": "1100 - 1314",
+            "details": "Ruled Tamil Nadu + Kerala + Sri Lanka + Southern AP, Joined under Khiljis",
+            "year": 1100
+          }
+        ],
+        "telangana": [
+          {
+            "name": "Golconda Sultanate",
+            "period": "1518 - 1687",
+            "details": "Lost to Aurangazeb",
+            "year": 1518
+          },
+          {
+            "name": "Hyderabad State",
+            "period": "1724 - 1805",
+            "details": "Nizams, Paid Taxes to Marathas",
+            "year": 1724
+          }
+        ],
+        "vijayanagara": {
+          "name": "Vijayanagara Empire",
+          "period": "1336 - 1565",
+          "details": "Founded by Harihara Raya and Bukka Raya from Kakatiya court",
+          "year": 1336
+        }
+      },
+      "eastern_india": {
+        "odisha": [
+          {
+            "name": "Eastern Ganga Dynasty",
+            "period": "1078 - 1434",
+            "details": "Odissa + Northern Andhra Pradesh, Minister founded Gajapati Dynasty",
+            "year": 1078
+          },
+          {
+            "name": "Gajapati Dynasty",
+            "period": "1434 - 1541",
+            "details": "Lost territory to Aurangazeb and Golconda Sultanate",
+            "year": 1434
+          }
+        ],
+        "bengal": [
+          {
+            "name": "Pala Dynasty",
+            "period": "700s - 1163",
+            "details": "Northern India early part + Bengal + Northeast, Lost to Senas and Eastern Gangas",
+            "year": 700
+          },
+          {
+            "name": "Sena Dynasty",
+            "period": "1070 - 1230",
+            "details": "Bengal + Some Northeast + Some Myanmar, Lost to Deva Dynasty",
+            "year": 1070
+          },
+          {
+            "name": "Bengal Sultanate",
+            "period": "1352 - 1576",
+            "details": "Got territory from Delhi Sultanate, Lost to Mughals",
+            "year": 1352
+          }
+        ],
+        "northeast": [
+          {
+            "name": "Deva Dynasty",
+            "period": "1156 - 1294",
+            "details": "Northeast + Northern Myanmar, Lost to Delhi Sultanate",
+            "year": 1156
+          }
+        ]
+      }
+    },
+    "foreign_visits": [
+      {
+        "name": "Marco Polo",
+        "period": "1289 - 1293",
+        "year": 1289
+      }
+    ],
+    "western_events": [
+      {
+        "name": "Crusades",
+        "period": "1096 - 1271",
+        "year": 1096
+      },
+      {
+        "name": "Magna Carta",
+        "year": 1215
+      },
+      {
+        "name": "Columbus Sails to Americas",
+        "year": 1492
+      },
+      {
+        "name": "Ferdinand Magellan's Trip",
+        "period": "1519 - 1522",
+        "year": 1519
+      },
+      {
+        "name": "Spanish Armada",
+        "year": 1588
+      },
+      {
+        "name": "William Shakespeare",
+        "period": "1564 - 1616",
+        "works": ["Romeo and Juliet", "Macbeth", "Midsummer Night's Dream"],
+        "year": 1564
+      },
+      {
+        "name": "American War for Independence",
+        "period": "1775 - 1783",
+        "year": 1775
+      },
+      {
+        "name": "Charles Dickens",
+        "period": "1812 - 1870",
+        "works": ["Great Expectations", "A Christmas Carol"],
+        "year": 1812
+      },
+      {
+        "name": "American Civil War",
+        "period": "1861 - 1865",
+        "year": 1861
+      },
+      {
+        "name": "World War II",
+        "period": "1939 - 1945",
+        "year": 1939
+      }
+    ]
+  }
+}
