@@ -29,7 +29,7 @@ export function TimelineEventCard({
     <Card
       className={`w-72 cursor-pointer transition-all duration-200 hover:shadow-xl hover:scale-105 border-l-4 ${
         isHovered ? 'ring-2 ring-offset-2 shadow-xl scale-105' : ''
-      }`}
+      } ${categoryColors[event.timeline as keyof typeof categoryColors]}`}
       style={{
         borderLeftColor: categoryColors[
           event.timeline as keyof typeof categoryColors
@@ -44,13 +44,6 @@ export function TimelineEventCard({
             <div className="flex items-center gap-2 mb-2">
               <Badge variant="secondary" className="text-xs font-medium">
                 {event.date}
-              </Badge>
-              <Badge
-                className={`text-xs ${
-                  categoryColors[event.timeline as keyof typeof categoryColors]
-                } border-0`}
-              >
-                {event.category}
               </Badge>
             </div>
             <CardTitle className="text-lg font-bold text-slate-900 dark:text-slate-100 leading-tight">

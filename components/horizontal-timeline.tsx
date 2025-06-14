@@ -96,7 +96,11 @@ export default function HorizontalTimeline({
               <div
                 key={`${event.timeline}-${index}`}
                 className="absolute"
-                style={{ left: `${clampedPosition}%` }}
+                style={{
+                  left: `${clampedPosition}%`,
+                  zIndex:
+                    hoveredEvent === `${event.timeline}-${index}` ? 50 : 10,
+                }}
                 onMouseEnter={() =>
                   setHoveredEvent(`${event.timeline}-${index}`)
                 }
