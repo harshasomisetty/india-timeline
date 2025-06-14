@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import timelineJson from '@/india-timeline.json';
 import {
   Book,
   Building,
@@ -20,9 +21,6 @@ import {
   Music,
 } from 'lucide-react';
 import { useState } from 'react';
-
-// Import the timeline data
-import timelineJson from '@/india-timeline.json';
 
 // Define types for our data
 type TimelineEvent = {
@@ -175,7 +173,7 @@ const transformTimelineData = (): TimelineData => {
 
 const timelineData = transformTimelineData();
 
-export default function Component() {
+export default function HorizontalTimeline() {
   const [selectedTimelines, setSelectedTimelines] = useState<string[]>([
     'architecture',
   ]);

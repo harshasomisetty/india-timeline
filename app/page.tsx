@@ -1,5 +1,5 @@
-import Component from '../components/horizontal-timeline';
+import HorizontalTimeline from '@/components/horizontal-timeline';
 
 export default function Page() {
-  return <Component />;
+  return <HorizontalTimeline />;
 }
