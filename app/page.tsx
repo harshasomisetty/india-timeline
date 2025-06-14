@@ -2,6 +2,7 @@
 
 import HorizontalTimeline from '@/components/horizontal-timeline';
 import { TimelineHeader } from '@/components/timeline-header';
+import { TimelineLegend } from '@/components/timeline-legend';
 import { TimelineTabs } from '@/components/timeline-tabs';
 import { TimelineEvent, timelineData } from '@/lib/timeline-utils';
 import { useState } from 'react';
@@ -40,6 +41,7 @@ export default function Page() {
           }}
         />
         <HorizontalTimeline events={filteredEvents} />
+        <TimelineLegend />
       </div>
     </main>
   );
