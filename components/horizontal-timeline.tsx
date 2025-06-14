@@ -29,6 +29,35 @@ interface HorizontalTimelineProps {
   events: (TimelineEvent & { timeline: string })[];
 }
 
+// Helper to assign levels to events to reduce overlap
+function assignEventLevels(
+  events: (TimelineEvent & { timeline: string })[],
+  minYear: number,
+  maxYear: number,
+) {
+  const positions: number[] = [];
+  const levels: number[] = [];
+  const minDistance = 6; // percent, minimum horizontal distance between events before staggering
+  const maxLevels = 16; // 16 above, 16 below
+
+  events.forEach((event, i) => {
+    const leftPosition = ((event.year - minYear) / (maxYear - minYear)) * 100;
+    let level = 0;
+    // Check previous events for overlap
+    for (let prev = i - 1; prev >= 0; prev--) {
+      if (Math.abs(leftPosition - positions[prev]) < minDistance) {
+        // If overlap, increase level
+        level = (levels[prev] + 1) % maxLevels;
+        // Alternate direction (above/below)
+        if (level === 0) level = 1;
+      }
+    }
+    positions.push(leftPosition);
+    levels.push(level);
+  });
+  return levels;
+}
+
 export default function HorizontalTimeline({
   events,
 }: HorizontalTimelineProps) {
@@ -50,9 +79,12 @@ export default function HorizontalTimeline({
     (c) => c.year >= minYear && c.year <= maxYear,
   );
 
+  // Assign levels to events to stagger them vertically
+  const eventLevels = assignEventLevels(events, minYear, maxYear);
+
   return (
     <div className="relative overflow-x-auto pb-8">
-      <div className="min-w-[1400px] relative px-8">
+      <div className="min-w-[1400px] relative px-2">
         {/* Timeline container */}
         <div className="relative h-screen flex items-center">
           {/* Main horizontal timeline line */}
@@ -83,6 +115,8 @@ export default function HorizontalTimeline({
           {events.map((event, index) => {
             const IconComponent =
               categoryIcons[event.timeline as keyof typeof categoryIcons];
+            // Use assigned level for staggering
+            const level = eventLevels[index];
             const isAbove = index % 2 === 0;
 
             // Calculate position based on the dynamic year range
@@ -91,6 +125,10 @@ export default function HorizontalTimeline({
 
             // Ensure events don't go off screen
             const clampedPosition = Math.max(8, Math.min(92, leftPosition));
+
+            // Stagger: increase vertical offset based on level
+            const baseOffset = 96; // px
+            const verticalOffset = baseOffset * (level + 1);
 
             return (
               <div
@@ -127,7 +165,7 @@ export default function HorizontalTimeline({
                     ].split(' ')[0]
                   } left-1/2 transform -translate-x-1/2 z-20`}
                   style={{
-                    height: '120px',
+                    height: `${120 + (verticalOffset - 96)}px`,
                     [isAbove ? 'bottom' : 'top']: '50%',
                   }}
                 />
@@ -135,8 +173,12 @@ export default function HorizontalTimeline({
                 {/* Event card */}
                 <div
                   className={`absolute ${
-                    isAbove ? 'bottom-full mb-32' : 'top-full mt-32'
+                    isAbove ? 'bottom-full' : 'top-full'
                   } left-1/2 transform -translate-x-1/2`}
+                  style={{
+                    marginBottom: isAbove ? `${verticalOffset}px` : undefined,
+                    marginTop: !isAbove ? `${verticalOffset}px` : undefined,
+                  }}
                 >
                   <TimelineEventCard
                     event={event}
