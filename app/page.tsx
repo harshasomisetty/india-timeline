@@ -8,8 +8,7 @@ import { useState } from 'react';
 
 export default function Page() {
   const [selectedTimelines, setSelectedTimelines] = useState<string[]>([
-    'world',
-    'india',
+    'architecture',
   ]);
 
   // Filter events based on selected timelines
