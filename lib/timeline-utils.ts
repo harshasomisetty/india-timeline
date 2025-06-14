@@ -3,6 +3,7 @@ import timelineJson from '../india-timeline.json';
 
 export type TimelineEvent = {
   date: string;
+  year: number;
   title: string;
   description: string;
   location: string;
@@ -36,6 +37,7 @@ export const transformTimelineData = (): TimelineCategory => {
   return {
     architecture: categories.architecture.temples.map((temple) => ({
       date: temple.period || temple.year.toString(),
+      year: temple.year,
       title: temple.name,
       description: temple.details || temple.event || 'Built',
       location: 'India',
@@ -43,6 +45,7 @@ export const transformTimelineData = (): TimelineCategory => {
     })),
     philosophy: categories.philosophy.thinkers.map((thinker) => ({
       date: thinker.period,
+      year: parseInt(thinker.period.split(' ')[0]),
       title: thinker.name,
       description: `${thinker.school || ''} ${thinker.details || ''}`.trim(),
       location: thinker.location || 'India',
@@ -50,6 +53,7 @@ export const transformTimelineData = (): TimelineCategory => {
     })),
     bhaktas: categories.bhaktas.map((bhakta) => ({
       date: bhakta.period,
+      year: parseInt(bhakta.period.split(' ')[0]),
       title: bhakta.name,
       description: `${bhakta.tradition || ''} ${bhakta.deity || ''} ${
         bhakta.details || ''
@@ -60,6 +64,7 @@ export const transformTimelineData = (): TimelineCategory => {
     music: [
       ...categories.music_dance.carnatic.map((musician) => ({
         date: musician.period,
+        year: parseInt(musician.period.split(' ')[0]),
         title: musician.name,
         description: musician.title || 'Carnatic Musician',
         location: 'South India',
@@ -67,6 +72,7 @@ export const transformTimelineData = (): TimelineCategory => {
       })),
       ...categories.music_dance.theorists.map((theorist) => ({
         date: theorist.period,
+        year: parseInt(theorist.period.split(' ')[0]),
         title: theorist.name,
         description:
           theorist.works?.join(', ') || theorist.details || 'Music Theorist',
@@ -75,6 +81,7 @@ export const transformTimelineData = (): TimelineCategory => {
       })),
       {
         date: categories.music_dance.hindustani.split.year.toString(),
+        year: categories.music_dance.hindustani.split.year,
         title: 'Hindustani-Carnatic Split',
         description: categories.music_dance.hindustani.split.details,
         location: 'India',
@@ -82,6 +89,7 @@ export const transformTimelineData = (): TimelineCategory => {
       },
       ...categories.music_dance.dance.map((dancer) => ({
         date: dancer.period,
+        year: parseInt(dancer.period.split(' ')[0]),
         title: dancer.name,
         description: dancer.details || 'Dance Form',
         location: 'India',
@@ -91,6 +99,7 @@ export const transformTimelineData = (): TimelineCategory => {
     literature: [
       ...categories.literature.mahabharata.map((author) => ({
         date: author.period,
+        year: parseInt(author.period.split(' ')[0]),
         title: author.name,
         description: author.works?.join(', ') || 'Mahabharata Author',
         location: 'Andhra Pradesh',
@@ -98,6 +107,7 @@ export const transformTimelineData = (): TimelineCategory => {
       })),
       ...categories.literature.ramayana.map((author) => ({
         date: author.period,
+        year: parseInt(author.period.split(' ')[0]),
         title: author.name,
         description: author.works?.join(', ') || 'Ramayana Author',
         location: author.language
@@ -107,6 +117,7 @@ export const transformTimelineData = (): TimelineCategory => {
       })),
       ...categories.literature.other.map((author) => ({
         date: author.period,
+        year: parseInt(author.period.split(' ')[0]),
         title: author.name,
         description: author.works?.join(', ') || 'Literary Figure',
         location: 'India',
