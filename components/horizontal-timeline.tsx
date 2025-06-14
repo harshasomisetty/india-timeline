@@ -34,6 +34,22 @@ export default function HorizontalTimeline({
 }: HorizontalTimelineProps) {
   const [hoveredEvent, setHoveredEvent] = useState<string | null>(null);
 
+  // Calculate min and max years from events with padding
+  const years = events.map((event) => event.year);
+  const minEventYear = Math.min(...years);
+  const maxEventYear = Math.max(...years);
+
+  // Add padding of 10% of the total range on each side
+  const yearRange = maxEventYear - minEventYear;
+  const padding = yearRange * 0.1;
+  const minYear = Math.floor(minEventYear - padding);
+  const maxYear = Math.ceil(maxEventYear + padding);
+
+  // Filter centuries to only show relevant ones
+  const relevantCenturies = centuries.filter(
+    (c) => c.year >= minYear && c.year <= maxYear,
+  );
+
   return (
     <div className="relative overflow-x-auto pb-8">
       <div className="min-w-[1400px] relative px-8">
@@ -43,29 +59,25 @@ export default function HorizontalTimeline({
           <div className="absolute w-full h-0.5 bg-slate-800 dark:bg-slate-200 top-1/2 transform -translate-y-1/2 z-10" />
 
           {/* Century markers on the line */}
-          {centuries
-            .filter((c) => c.century >= -6 && c.century <= 21)
-            .map((century, index) => {
-              const totalCenturies = centuries.filter(
-                (c) => c.century >= -6 && c.century <= 21,
-              ).length;
-              const leftPosition = (index / (totalCenturies - 1)) * 100;
+          {relevantCenturies.map((century, index) => {
+            const totalCenturies = relevantCenturies.length;
+            const leftPosition = (index / (totalCenturies - 1)) * 100;
 
-              return (
-                <div
-                  key={century.century}
-                  className="absolute top-1/2 transform -translate-y-1/2 z-20"
-                  style={{ left: `${leftPosition}%` }}
-                >
-                  {/* Century marker dot */}
-                  <div className="w-3 h-3 bg-slate-800 dark:bg-slate-200 rounded-full" />
-                  {/* Century label */}
-                  <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-xs font-medium text-slate-600 dark:text-slate-400 whitespace-nowrap">
-                    {century.label}
-                  </div>
+            return (
+              <div
+                key={century.century}
+                className="absolute top-1/2 transform -translate-y-1/2 z-20"
+                style={{ left: `${leftPosition}%` }}
+              >
+                {/* Century marker dot */}
+                <div className="w-3 h-3 bg-slate-800 dark:bg-slate-200 rounded-full" />
+                {/* Century label */}
+                <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-xs font-medium text-slate-600 dark:text-slate-400 whitespace-nowrap">
+                  {century.label}
                 </div>
-              );
-            })}
+              </div>
+            );
+          })}
 
           {/* Events */}
           {events.map((event, index) => {
@@ -73,9 +85,7 @@ export default function HorizontalTimeline({
               categoryIcons[event.timeline as keyof typeof categoryIcons];
             const isAbove = index % 2 === 0;
 
-            // Calculate position based on year (-600 to 2100 range)
-            const minYear = -600;
-            const maxYear = 2100;
+            // Calculate position based on the dynamic year range
             const leftPosition =
               ((event.year - minYear) / (maxYear - minYear)) * 100;
 
